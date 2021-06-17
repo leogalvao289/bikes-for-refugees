@@ -13,7 +13,33 @@ body {
 
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+
 }
+
+/* cuando el raton se pone en cima cambia*/
+.button-primary:hover, 
+.button-primary:focus {
+  background: #ef7f52;
+}
+
+.button-primary {
+  background: #ce5f31;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background: white;
+  color: #ce5f31;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
 
 /* Navigation */
 
@@ -67,7 +93,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/Html_Css_Class/bikes-for-refugees/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -97,9 +123,28 @@ button {
 
 /* Article */
 
+.article-wrapper   {
+  display: flex;
+  float: left;
+  width:350px;
+  height:200px;
+  border:1px solid black;
+  padding: 10px;
+  justify-content:space-between;
+ 
+  
+}
+
+
 .article {
   margin-bottom: 2em;
+  display: flex;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: center;
 }
+
 
 .article__image {
   object-fit: contain;
